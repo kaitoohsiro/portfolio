@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fas fa-brain"></i>kai-folio</h1>
+        <a href="#" class="sns sns-first"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="sns"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="sns"><i class="fab fa-github"></i></a>
+    </div>
+    <div id="app">
+        <ul>
+            <li class="link link-first" @click="link('website')">Website</li>
+            <li class="link" @click="link('about')">About</li>
+            <li class="link" @click="link('hobby')">Hobby</li>
+            <li class="link" @click="link('contact')">Contact</li>
+        </ul>
+
+
+        <div class="about-main" v-if="about">
+            <p class="about-title">About</p>
+            <p>初めまして。自分は沖縄県出身。21歳。現在東京の大学に通っている学生です。<br>普段は機械工学を大学で学んでいるのですが、人工知能に興味がありプログラミング、数学、物理学、脳科学、心理学を独学で学んでいます。</p>
+            <p>現在使用している言語はhtml$css,javascript,php,python,swiftです。</p>
+            <p class="pro-icon">
+                <i class="pro-icon fab fa-html5"></i>
+                <i class="pro-icon fab fa-css3-alt"></i>
+                <i class="pro-icon fab fa-js-square"></i>
+                <i class="pro-icon fab fa-php"></i>
+                <i class="pro-icon fab fa-python"></i>
+            </p>
+        </div>
+
+        <div class="about-main" v-if="contact">
+            <p>フォーム現在作成中</p>
+        </div>
+
+            <div class="about-main" v-if="website">
+                <a href="./website01/index.html">
+                    <p class="img_wrap"><img src="./images/website01.png"></p>
+                </a>
+            </div>
+
+            <div class="about-main" v-if="hobby">
+                <p>写真現在編集中</p>
+            </div>
+    </div>
+    <footer>
+        <h6>thank you for visiting my website.</h6>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
