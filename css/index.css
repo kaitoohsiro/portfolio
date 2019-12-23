@@ -70,14 +70,15 @@ ul li{
 }
 
 
-
-
-
 footer{
     border-top:1px solid rgb(204, 202, 202);
     font-size:20px;
     text-align:center;
     color:#999;
+}
+
+footer a{
+    display:none;
 }
 
 
@@ -87,6 +88,15 @@ footer{
 @media screen and (max-width:480px){
     body{
         padding:10px;
+    }
+    .header a{
+        display:none;
+    }
+    .about-title{
+        font-size:35px;
+        color:#999;
+        border-bottom:1px solid #999;
+        width:100px;
     }
     .sns{
         font-size:20px;
@@ -110,7 +120,13 @@ footer{
         padding:10px;
        text-align:center;
     }
-
+    footer a{
+        display:inline-block;
+        font-size:20px;
+        padding:10px;
+        color:#999;
+        margin-top:30px;
+    }
 
 }
 
