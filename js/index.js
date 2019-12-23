@@ -39,4 +39,4 @@ var Vue = new Vue({
       }
     }
   });
-  
+
