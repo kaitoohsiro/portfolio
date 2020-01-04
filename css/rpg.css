@@ -1,0 +1,30 @@
+.move{
+    text-align:center;
+}
+.cursor{
+    display:none;
+}
+
+@media screen and (max-width:1024px){
+    #main{
+        position:relative;
+        z-index:0;
+    }
+    .move{
+        position:absolute;
+        top:70%;
+        z-index:1;
+    }
+    .cursor{
+        display:block;
+    }
+    .cursor1{
+        display:block;
+    }
+    .cursor2{
+        display:inline-block;
+    }
+    .cursor{
+        display:block;
+    }
+}

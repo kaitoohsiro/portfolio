@@ -36,7 +36,14 @@ ul li{
     padding-right:40px;
 }
 /*website*/
-
+.website{
+    position:relative;
+}
+.title_wrap{
+    position:absolute;
+    text-align:center;
+    color:#999;
+}
   .img_wrap{
     border: 1px solid #ddd;
     width: 300px;
@@ -44,8 +51,10 @@ ul li{
     overflow: hidden;
     cursor: pointer;
     background-color:black;
+    display:inline-block;
   }
   .img_wrap img{
+    display:inline-block;
     width: 100%;
     transition-duration: 0.5s;
   }
@@ -129,6 +138,9 @@ footer a{
         color:#888;
         padding:10px;
        text-align:center;
+    }
+    .website01{
+        display:block;
     }
     footer a{
         display:inline-block;
