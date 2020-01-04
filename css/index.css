@@ -20,6 +20,9 @@ body{
     color:red;
 }
 
+.h-menu{
+    display:none;
+}
 ul li{
     cursor:pointer;
     display:inline-block;
@@ -87,6 +90,7 @@ footer a{
 
 @media screen and (max-width:480px){
     body{
+        text-align:center;
         padding:10px;
     }
     .header a{
@@ -106,17 +110,23 @@ footer a{
     .sns-first{
         padding-left:60%;
     }
-
+    .h-menu{
+        display:block;
+    }
+    .h-menu:active{
+        
+    }
+    ul{
+        padding-inline-start: 0px;
+    }
     ul li{
         cursor:pointer;
         display:inline-block;
-    }
-    .link-first{
-        padding-left:0px;
+        padding-inline-start: 0px;
     }
     .link{
+        display:block;
         color:#888;
-        font-size:px;
         padding:10px;
        text-align:center;
     }
