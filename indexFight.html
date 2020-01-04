@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/indexFight.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li>
+                <p>{{ name01.name01 }}</p>
+                <p>HP:{{ name01.hp01 }}</p>
+                <p>MP:{{ name01.mp01 }}</p>
+                <p>lv:{{ name01.lv01 }}</p>
+            </li>
+            <li>
+                <p>{{ name02.name02 }}</p>
+                <p>HP:{{ name02.hp02 }}</p>
+                <p>MP:{{ name02.mp02 }}</p>
+                <p>Lv:{{ name02.lv02 }}</p>
+            </li>
+            <li>
+                <p>{{ name03.name03 }}</p>
+                <p>HP:{{ name03.hp03 }}</p>
+                <p>MP:{{ name03.mp03 }}</p>
+                <p>Lv:{{ name03.lv03 }}</p>
+            </li>
+            <li>
+                <p>{{ name04.name04 }}</p>
+                <p>HP:{{ name04.hp04 }}</p>
+                <p>MP{{ name04.mp04 }}</p>
+                <p>Lv:{{ name04.lv04 }}</p>
+            </li>
+        </ul>
+        <img V-if='show1' src="./images/m01.jpg" alt="">
+        <p>{{ boss.hp }}</p>
+        <p v-if="show2" >倒した</p>
+        <div class="menu">
+            <div class="menu-a">
+                <p @click="fight('list1')">こうげき</p>
+                <p @click="fight('list2')">じゅもん</p>
+                <p @click="fight('list3')">ぼうぎょ</p>
+            </div>
+            <div class="menu-a">
+                    <p @click="fight('list4')">どうぐ</p>
+                    <p @click="fight('list5')">そうび</p>
+                    <p @click="fight('list6')">にげる</p>
+                </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="./js/indexFight.js"></script>
+</body>
+</html>

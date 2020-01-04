@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/webHome.js"></script>
+    <link rel="stylesheet" href="./css/webHome.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <h1>
+          WEBPAGE
+        </h1>
+      </div>
+    </header>
+    <div class="main" id="app">
+      <div class="menu">
+        <ul>
+          <li class="menu-v" @click="fight('list1')">プロフィール</li>
+          <li class="menu-v" @click="fight('list2')">つよさ</li>
+          <li class="menu-v" @click="fight('list3')">とくぎとじゅもん</li>
+          <li class="menu-v" @click="fight('list4')">げーむをする</li>
+        </ul>
+      </div>
+      <div class="menu">
+        <p v-if="list01">
+            <p v-if="list01">name:{{ name }}</p>
+            <p v-if="list01">age:{{ age }}</p>
+            <p v-if="list01">gender:{{ jender }}</p>
+            <p v-if="list01">university:{{ university }}</p>
+            <p v-if="list01">programing:{{ a }},{{ b }},{{ c }},{{ d }}</p>
+            <p v-if="list01">その他:{{ e }}<br>{{ f }}</p>
+        </p>
+        <p v-if="list02">
+          <p v-if="list02">Lv:{{ Lv }}</p>
+          <p v-if="list02">HP:{{ hp }}</p>
+          <p v-if="list02">MP:{{ mp }}</p>
+        </p>
+        <p v-if="list03">
+            <p v-if="list03">{{ j }}</p>
+            <p v-if="list03">{{ k }}</p>
+            <p v-if="list03">{{ l }}</p>
+        </p>
+        <a href="indexFight.html" id=""><p v-if="list04">たたかう</p></a>
+        <p v-if="listX">選択してください</p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="./js/webHome.js"></script>
+  </body>
+</html>
