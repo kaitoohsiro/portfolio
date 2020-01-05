@@ -1,5 +1,5 @@
 $(function() {
     $('.hamburger--emphatic').click(function() {
-        $('.link').slideToggle(1000);
+        $('.link').stop().slideToggle(1000);
       });
 })
